@@ -1,0 +1,12 @@
+node_modules/
+.env
+artifacts/
+test-results/
+playwright-report/
+apps/*.apk
+apps/*.aab
+*.log
+.DS_Store
+.idea/
+.vscode/
+dist/

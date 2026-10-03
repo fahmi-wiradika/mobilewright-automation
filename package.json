@@ -1,0 +1,25 @@
+{
+  "name": "mobile-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "doctor": "mobilewright doctor",
+    "devices": "mobilewright devices",
+    "test": "mobilewright test",
+    "test:smoke": "mobilewright test tests/smoke",
+    "test:regression": "mobilewright test tests/regression",
+    "test:report": "mobilewright test --reporter html",
+    "report": "mobilewright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@mobilewright/test": "^0.0.63",
+    "@types/node": "^26.6.4",
+    "dotenv": "^18.0.5",
+    "mobilewright": "^0.0.63",
+    "typescript": "^7.0.2"
+  }
+}
