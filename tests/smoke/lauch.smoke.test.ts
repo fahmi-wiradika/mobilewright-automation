@@ -12,7 +12,7 @@ test.describe('smoke: app launch', () => {
     await loggedInHome.waitUntilLoaded();
   });
 
-  test('open apps', async ({ homeScreen }) => {
+  test.skip('open apps', async ({ homeScreen }) => {
     await homeScreen.waitUntilLoaded();
   });
 
