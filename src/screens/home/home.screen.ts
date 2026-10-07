@@ -11,6 +11,6 @@ export class HomeScreen extends BaseScreen {
   }
 
   async waitUntilLoaded() {
-    await expect(this.screen.getByText('Welcome')).toBeVisible();
+    await expect(this.screen.getByTestId('com.saucelabs.mydemoapp.android:id/mTvTitle')).toBeVisible();
   }
 }

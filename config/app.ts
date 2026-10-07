@@ -1,4 +1,4 @@
-import 'dotenv';
+import 'dotenv/config';
 
 export const app = {
   packageName: process.env.APP_PACKAGE ?? 'com.example.myapp',
