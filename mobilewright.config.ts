@@ -13,7 +13,7 @@ export default defineConfig({
   retries: 1,
   workers: 1,
   forbidOnly: false,
-  reporter: 'list',
+  reporter: 'html', // 'list' 
   viewTree: 'on-failure',
 
   use: {
