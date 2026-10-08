@@ -6,10 +6,15 @@ test.describe('auth: login', () => {
     await tabBarScreen.open();
     await tabBarScreen.tapLoginMenu();
     await loginScreen.login(users.invalid.email, users.invalid.password);
+    await loginScreen.verifyLockedAccount();
   });
+
   test('login with valid credentials', async ({ loginScreen, homeScreen, tabBarScreen }) => {
     await tabBarScreen.open();
     await tabBarScreen.tapLoginMenu();
     await loginScreen.login(users.standard.email, users.standard.password);
+    await tabBarScreen.open();
+    await tabBarScreen.tapLogoutMenu();
+    await tabBarScreen.tapConfirmLogout();
   });
 });
